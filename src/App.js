@@ -1,10 +1,13 @@
 import './App.css';
-import { ParentUseReducer } from './components/Parent Child/ParentUseReducer';
+import { ChildA } from './components/Context/ContextChildrenOne';
+import { ContextParentOne } from './components/Context/ContextParentOne';
 
 function App() {
   return (
     <div className="App">
-      <ParentUseReducer />
+        <ContextParentOne>
+          <ChildA />
+        </ContextParentOne>
     </div>
   )
 }
